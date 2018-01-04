@@ -1,0 +1,357 @@
+2018-01-04 18:48:32,735 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2018-01-04 18:48:32,749 INFO o.a.j.JMeter: Loading user properties from: /Users/kennybergquist/.bzt/jmeter-taurus/3.3/bin/user.properties
+2018-01-04 18:48:32,749 INFO o.a.j.JMeter: Loading system properties from: /Users/kennybergquist/.bzt/jmeter-taurus/3.3/bin/system.properties
+2018-01-04 18:48:32,750 INFO o.a.j.JMeter: Setting System properties from file: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/system.properties
+2018-01-04 18:48:32,754 INFO o.a.j.JMeter: Copyright (c) 1998-2017 The Apache Software Foundation
+2018-01-04 18:48:32,754 INFO o.a.j.JMeter: Version 3.3 r1808647
+2018-01-04 18:48:32,754 INFO o.a.j.JMeter: java.version=1.8.0_60
+2018-01-04 18:48:32,754 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2018-01-04 18:48:32,755 INFO o.a.j.JMeter: os.name=Mac OS X
+2018-01-04 18:48:32,755 INFO o.a.j.JMeter: os.arch=x86_64
+2018-01-04 18:48:32,755 INFO o.a.j.JMeter: os.version=10.13.2
+2018-01-04 18:48:32,755 INFO o.a.j.JMeter: file.encoding=UTF-8
+2018-01-04 18:48:32,755 INFO o.a.j.JMeter: Max memory     =1908932608
+2018-01-04 18:48:32,755 INFO o.a.j.JMeter: Available Processors =8
+2018-01-04 18:48:32,759 INFO o.a.j.JMeter: Default Locale=English (United States)
+2018-01-04 18:48:32,759 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2018-01-04 18:48:32,759 INFO o.a.j.JMeter: JMeterHome=/Users/kennybergquist/.bzt/jmeter-taurus/3.3
+2018-01-04 18:48:32,759 INFO o.a.j.JMeter: user.dir  =/Users/kennybergquist/Git/nginx_proxy_zero
+2018-01-04 18:48:32,760 INFO o.a.j.JMeter: PWD       =/Users/kennybergquist/Git/nginx_proxy_zero
+2018-01-04 18:48:32,761 INFO o.a.j.JMeter: IP: 192.168.1.152 Name: KennyBeuistsMBP.fios-router.home FullName: kennybeuistsmbp.fios-router.home
+2018-01-04 18:48:32,761 INFO o.a.j.JMeter: user.classpath=/Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651:/Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651
+2018-01-04 18:48:32,761 INFO o.a.j.JMeter: Adding to classpath and loader: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651
+2018-01-04 18:48:32,762 INFO o.a.j.JMeter: Adding to classpath and loader: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651
+2018-01-04 18:48:32,766 INFO o.a.j.s.FileServer: Default base='/Users/kennybergquist/Git/nginx_proxy_zero'
+2018-01-04 18:48:32,766 INFO o.a.j.s.FileServer: Set new base='/Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651'
+2018-01-04 18:48:32,898 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2018-01-04 18:48:32,917 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2018-01-04 18:48:32,921 INFO o.a.j.s.SaveService: Using SaveService properties version 3.2
+2018-01-04 18:48:32,926 INFO o.a.j.s.SaveService: Loading file: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/modified_requests.jmx
+2018-01-04 18:48:32,981 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2018-01-04 18:48:32,990 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2018-01-04 18:48:33,005 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-01-04 18:48:33,005 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-01-04 18:48:33,005 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-01-04 18:48:33,005 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-01-04 18:48:33,005 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2018-01-04 18:48:33,005 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2018-01-04 18:48:33,024 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2018-01-04 18:48:33,025 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2018-01-04 18:48:33,025 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2018-01-04 18:48:33,028 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2018-01-04 18:48:33,028 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2018-01-04 18:48:33,470 INFO o.a.j.JMeter: Running test (1515109713470)
+2018-01-04 18:48:33,503 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : quick-test
+2018-01-04 18:48:33,503 INFO o.a.j.e.StandardJMeterEngine: Starting 100 threads for group quick-test.
+2018-01-04 18:48:33,503 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2018-01-04 18:48:33,507 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2018-01-04 18:48:33,507 INFO c.b.j.t.c.ConcurrencyThreadStarter: Start supplying threads
+2018-01-04 18:48:33,812 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2018-01-04 18:48:33,812 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2018-01-04 18:48:33,812 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2018-01-04 18:48:33,812 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2018-01-04 18:48:33,812 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-1
+2018-01-04 18:48:33,831 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = KennyBeuistsMBP.fios-router.home
+2018-01-04 18:48:33,836 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2018-01-04 18:48:34,814 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-2
+2018-01-04 18:48:35,816 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-3
+2018-01-04 18:48:35,817 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-4
+2018-01-04 18:48:36,820 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-5
+2018-01-04 18:48:36,823 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-6
+2018-01-04 18:48:37,826 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-7
+2018-01-04 18:48:38,831 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-8
+2018-01-04 18:48:38,833 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-9
+2018-01-04 18:48:39,835 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-10
+2018-01-04 18:48:39,837 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-11
+2018-01-04 18:48:40,837 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-12
+2018-01-04 18:48:41,839 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-13
+2018-01-04 18:48:41,839 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-14
+2018-01-04 18:48:42,875 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-15
+2018-01-04 18:48:42,875 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-16
+2018-01-04 18:48:43,876 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-17
+2018-01-04 18:48:44,879 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-18
+2018-01-04 18:48:44,879 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-19
+2018-01-04 18:48:45,880 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-21
+2018-01-04 18:48:45,880 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-20
+2018-01-04 18:48:46,881 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-22
+2018-01-04 18:48:47,881 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-23
+2018-01-04 18:48:47,882 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-24
+2018-01-04 18:48:48,882 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-25
+2018-01-04 18:48:48,883 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-26
+2018-01-04 18:48:49,883 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-27
+2018-01-04 18:48:50,885 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-28
+2018-01-04 18:48:50,886 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-29
+2018-01-04 18:48:51,886 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-30
+2018-01-04 18:48:51,887 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-31
+2018-01-04 18:48:52,888 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-32
+2018-01-04 18:48:53,888 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-33
+2018-01-04 18:48:53,888 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-34
+2018-01-04 18:48:54,988 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-35
+2018-01-04 18:48:54,991 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-36
+2018-01-04 18:48:55,991 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-37
+2018-01-04 18:48:56,992 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-38
+2018-01-04 18:48:56,992 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-39
+2018-01-04 18:48:57,993 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-40
+2018-01-04 18:48:57,993 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-41
+2018-01-04 18:48:58,994 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-42
+2018-01-04 18:48:59,994 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-43
+2018-01-04 18:48:59,995 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-44
+2018-01-04 18:49:00,995 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-45
+2018-01-04 18:49:00,996 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-46
+2018-01-04 18:49:01,997 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-47
+2018-01-04 18:49:02,997 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-48
+2018-01-04 18:49:02,997 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-49
+2018-01-04 18:49:03,998 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-50
+2018-01-04 18:49:03,999 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-51
+2018-01-04 18:49:04,999 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-52
+2018-01-04 18:49:06,000 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-53
+2018-01-04 18:49:06,000 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-54
+2018-01-04 18:49:07,001 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-55
+2018-01-04 18:49:07,001 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-56
+2018-01-04 18:49:08,002 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-57
+2018-01-04 18:49:09,002 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-58
+2018-01-04 18:49:09,003 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-59
+2018-01-04 18:49:10,003 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-60
+2018-01-04 18:49:10,004 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-61
+2018-01-04 18:49:11,004 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-62
+2018-01-04 18:49:12,005 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-63
+2018-01-04 18:49:12,005 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-64
+2018-01-04 18:49:13,006 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-65
+2018-01-04 18:49:13,006 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-66
+2018-01-04 18:49:14,007 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-67
+2018-01-04 18:49:14,007 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-68
+2018-01-04 18:49:15,008 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-69
+2018-01-04 18:49:16,008 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-70
+2018-01-04 18:49:16,009 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-71
+2018-01-04 18:49:17,009 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-72
+2018-01-04 18:49:17,009 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-73
+2018-01-04 18:49:18,010 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-74
+2018-01-04 18:49:19,014 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-75
+2018-01-04 18:49:19,014 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-76
+2018-01-04 18:49:20,015 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-77
+2018-01-04 18:49:20,015 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-78
+2018-01-04 18:49:21,015 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-79
+2018-01-04 18:49:22,016 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-80
+2018-01-04 18:49:22,016 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-81
+2018-01-04 18:49:23,017 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-82
+2018-01-04 18:49:23,017 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-83
+2018-01-04 18:49:24,018 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-84
+2018-01-04 18:49:25,022 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-85
+2018-01-04 18:49:25,022 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-86
+2018-01-04 18:49:26,024 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-87
+2018-01-04 18:49:26,024 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-88
+2018-01-04 18:49:27,025 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-89
+2018-01-04 18:49:28,028 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-90
+2018-01-04 18:49:28,028 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-91
+2018-01-04 18:49:29,029 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-92
+2018-01-04 18:49:29,029 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-93
+2018-01-04 18:49:30,033 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-94
+2018-01-04 18:49:31,034 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-95
+2018-01-04 18:49:31,035 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-96
+2018-01-04 18:49:32,037 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-97
+2018-01-04 18:49:32,038 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-98
+2018-01-04 18:49:33,038 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-99
+2018-01-04 18:49:34,042 INFO o.a.j.t.JMeterThread: Thread started: quick-test 1-100
+2018-01-04 18:50:34,196 INFO c.b.j.t.c.ConcurrencyThreadStarter: Done supplying threads
+2018-01-04 18:50:34,203 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-75
+2018-01-04 18:50:34,203 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-63
+2018-01-04 18:50:34,203 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-63
+2018-01-04 18:50:34,203 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-31
+2018-01-04 18:50:34,203 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-31
+2018-01-04 18:50:34,203 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-35
+2018-01-04 18:50:34,203 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-75
+2018-01-04 18:50:34,203 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-35
+2018-01-04 18:50:34,203 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-58
+2018-01-04 18:50:34,203 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-58
+2018-01-04 18:50:34,206 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-76
+2018-01-04 18:50:34,206 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-76
+2018-01-04 18:50:34,206 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-27
+2018-01-04 18:50:34,206 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-6
+2018-01-04 18:50:34,207 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-27
+2018-01-04 18:50:34,207 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-6
+2018-01-04 18:50:34,208 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-66
+2018-01-04 18:50:34,208 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-66
+2018-01-04 18:50:34,208 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-8
+2018-01-04 18:50:34,209 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-8
+2018-01-04 18:50:34,210 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-70
+2018-01-04 18:50:34,211 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-80
+2018-01-04 18:50:34,211 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-17
+2018-01-04 18:50:34,211 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-80
+2018-01-04 18:50:34,211 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-17
+2018-01-04 18:50:34,211 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-70
+2018-01-04 18:50:34,211 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-74
+2018-01-04 18:50:34,211 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-24
+2018-01-04 18:50:34,212 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-74
+2018-01-04 18:50:34,212 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-24
+2018-01-04 18:50:34,213 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-15
+2018-01-04 18:50:34,214 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-52
+2018-01-04 18:50:34,214 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-15
+2018-01-04 18:50:34,214 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-52
+2018-01-04 18:50:34,214 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-93
+2018-01-04 18:50:34,214 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-93
+2018-01-04 18:50:34,219 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-77
+2018-01-04 18:50:34,219 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-68
+2018-01-04 18:50:34,219 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-39
+2018-01-04 18:50:34,219 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-77
+2018-01-04 18:50:34,219 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-42
+2018-01-04 18:50:34,219 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-48
+2018-01-04 18:50:34,219 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-68
+2018-01-04 18:50:34,219 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-42
+2018-01-04 18:50:34,219 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-48
+2018-01-04 18:50:34,219 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-39
+2018-01-04 18:50:34,219 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-59
+2018-01-04 18:50:34,220 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-4
+2018-01-04 18:50:34,220 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-59
+2018-01-04 18:50:34,220 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-54
+2018-01-04 18:50:34,220 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-4
+2018-01-04 18:50:34,220 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-54
+2018-01-04 18:50:34,221 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-98
+2018-01-04 18:50:34,222 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-25
+2018-01-04 18:50:34,222 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-98
+2018-01-04 18:50:34,222 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-25
+2018-01-04 18:50:34,222 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-28
+2018-01-04 18:50:34,222 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-28
+2018-01-04 18:50:34,224 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-85
+2018-01-04 18:50:34,224 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-81
+2018-01-04 18:50:34,224 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-60
+2018-01-04 18:50:34,224 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-85
+2018-01-04 18:50:34,224 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-81
+2018-01-04 18:50:34,224 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-60
+2018-01-04 18:50:34,225 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-51
+2018-01-04 18:50:34,225 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-51
+2018-01-04 18:50:34,225 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-36
+2018-01-04 18:50:34,225 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-36
+2018-01-04 18:50:34,225 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-94
+2018-01-04 18:50:34,225 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-94
+2018-01-04 18:50:34,226 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-19
+2018-01-04 18:50:34,226 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-19
+2018-01-04 18:50:34,227 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-5
+2018-01-04 18:50:34,227 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-83
+2018-01-04 18:50:34,227 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-5
+2018-01-04 18:50:34,227 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-83
+2018-01-04 18:50:34,228 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-33
+2018-01-04 18:50:34,228 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-33
+2018-01-04 18:50:34,230 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-90
+2018-01-04 18:50:34,230 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-69
+2018-01-04 18:50:34,230 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-90
+2018-01-04 18:50:34,230 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-69
+2018-01-04 18:50:34,231 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-14
+2018-01-04 18:50:34,231 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-14
+2018-01-04 18:50:34,231 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-72
+2018-01-04 18:50:34,232 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-72
+2018-01-04 18:50:34,233 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-62
+2018-01-04 18:50:34,233 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-62
+2018-01-04 18:50:34,234 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-84
+2018-01-04 18:50:34,234 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-84
+2018-01-04 18:50:34,234 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-9
+2018-01-04 18:50:34,234 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-78
+2018-01-04 18:50:34,234 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-9
+2018-01-04 18:50:34,234 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-16
+2018-01-04 18:50:34,234 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-78
+2018-01-04 18:50:34,235 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-16
+2018-01-04 18:50:34,236 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-88
+2018-01-04 18:50:34,236 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-88
+2018-01-04 18:50:34,237 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-38
+2018-01-04 18:50:34,237 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-38
+2018-01-04 18:50:34,238 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-50
+2018-01-04 18:50:34,239 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-50
+2018-01-04 18:50:34,239 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-29
+2018-01-04 18:50:34,239 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-11
+2018-01-04 18:50:34,239 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-29
+2018-01-04 18:50:34,239 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-11
+2018-01-04 18:50:34,240 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-86
+2018-01-04 18:50:34,240 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-65
+2018-01-04 18:50:34,240 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-86
+2018-01-04 18:50:34,240 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-65
+2018-01-04 18:50:34,241 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-7
+2018-01-04 18:50:34,241 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-7
+2018-01-04 18:50:34,241 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-34
+2018-01-04 18:50:34,242 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-34
+2018-01-04 18:50:34,242 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-92
+2018-01-04 18:50:34,242 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-92
+2018-01-04 18:50:34,243 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-43
+2018-01-04 18:50:34,243 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-43
+2018-01-04 18:50:34,243 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-41
+2018-01-04 18:50:34,243 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-41
+2018-01-04 18:50:34,244 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-45
+2018-01-04 18:50:34,244 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-45
+2018-01-04 18:50:34,245 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-26
+2018-01-04 18:50:34,245 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-26
+2018-01-04 18:50:34,245 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-40
+2018-01-04 18:50:34,245 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-40
+2018-01-04 18:50:34,246 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-57
+2018-01-04 18:50:34,246 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-89
+2018-01-04 18:50:34,246 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-55
+2018-01-04 18:50:34,247 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-55
+2018-01-04 18:50:34,247 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-89
+2018-01-04 18:50:34,247 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-57
+2018-01-04 18:50:34,247 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-20
+2018-01-04 18:50:34,247 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-20
+2018-01-04 18:50:34,248 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-100
+2018-01-04 18:50:34,248 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-82
+2018-01-04 18:50:34,248 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-100
+2018-01-04 18:50:34,248 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-82
+2018-01-04 18:50:34,249 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-47
+2018-01-04 18:50:34,249 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-32
+2018-01-04 18:50:34,249 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-47
+2018-01-04 18:50:34,249 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-32
+2018-01-04 18:50:34,250 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-44
+2018-01-04 18:50:34,250 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-44
+2018-01-04 18:50:34,251 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-13
+2018-01-04 18:50:34,251 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-13
+2018-01-04 18:50:34,252 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-56
+2018-01-04 18:50:34,252 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-56
+2018-01-04 18:50:34,254 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-12
+2018-01-04 18:50:34,254 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-12
+2018-01-04 18:50:34,255 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-97
+2018-01-04 18:50:34,255 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-95
+2018-01-04 18:50:34,255 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-73
+2018-01-04 18:50:34,255 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-2
+2018-01-04 18:50:34,255 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-46
+2018-01-04 18:50:34,255 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-95
+2018-01-04 18:50:34,255 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-73
+2018-01-04 18:50:34,255 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-46
+2018-01-04 18:50:34,255 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-97
+2018-01-04 18:50:34,255 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-2
+2018-01-04 18:50:34,256 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-3
+2018-01-04 18:50:34,256 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-91
+2018-01-04 18:50:34,256 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-3
+2018-01-04 18:50:34,256 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-61
+2018-01-04 18:50:34,256 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-91
+2018-01-04 18:50:34,256 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-18
+2018-01-04 18:50:34,257 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-61
+2018-01-04 18:50:34,257 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-21
+2018-01-04 18:50:34,257 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-18
+2018-01-04 18:50:34,257 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-21
+2018-01-04 18:50:34,257 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-67
+2018-01-04 18:50:34,257 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-37
+2018-01-04 18:50:34,257 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-67
+2018-01-04 18:50:34,257 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-37
+2018-01-04 18:50:34,260 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-79
+2018-01-04 18:50:34,260 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-79
+2018-01-04 18:50:34,262 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-71
+2018-01-04 18:50:34,262 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-71
+2018-01-04 18:50:34,262 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-99
+2018-01-04 18:50:34,262 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-87
+2018-01-04 18:50:34,262 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-99
+2018-01-04 18:50:34,262 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-87
+2018-01-04 18:50:34,265 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-96
+2018-01-04 18:50:34,265 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-96
+2018-01-04 18:50:34,265 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-64
+2018-01-04 18:50:34,265 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-64
+2018-01-04 18:50:34,265 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-10
+2018-01-04 18:50:34,265 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-10
+2018-01-04 18:50:34,266 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-1
+2018-01-04 18:50:34,267 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-1
+2018-01-04 18:50:34,268 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-23
+2018-01-04 18:50:34,268 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-23
+2018-01-04 18:50:34,268 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-22
+2018-01-04 18:50:34,268 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-22
+2018-01-04 18:50:34,268 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-49
+2018-01-04 18:50:34,268 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-49
+2018-01-04 18:50:34,269 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-30
+2018-01-04 18:50:34,269 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-30
+2018-01-04 18:50:34,270 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-53
+2018-01-04 18:50:34,270 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-53
+2018-01-04 18:50:34,271 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2018-01-04 18:50:34,272 INFO o.a.j.e.StandardJMeterEngine: Forced JVM shutdown requested at end of test

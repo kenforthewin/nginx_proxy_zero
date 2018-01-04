@@ -3,7 +3,7 @@ require "sinatra/reloader"
 require 'honeybadger'
 require 'json'
 require_all 'lib'
-
+Docker::API_VERSION = '1.21'
 class NginxProxyZero < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
@@ -16,8 +16,7 @@ class NginxProxyZero < Sinatra::Base
     #   name: "nginxproxyzero_some-zerodowntime-service_1",
     #   network: "nginxproxyzero_default",
     #   image: "jwilder/whoami",
-    #   virtual_host: "whoami.deve",
-    #   healthy_process: "/app/http"
+    #   virtual_host: "whoami.deve"
     # }
     @payload = params
     @payload = JSON.parse(request.body.read).symbolize_keys unless @payload[:network]
@@ -29,7 +28,7 @@ class NginxProxyZero < Sinatra::Base
       'Env' => ["VIRTUAL_HOST=#{@payload[:virtual_host]}"]
     )
     new_container.start
-    health_check = HealthCheck.new(new_container.id, @payload[:healthy_process])
+    health_check = HealthCheck.new(new_container)
     Thread.new do
       health_check.wait_until_healthy do
         docker_network.connect(new_container.id)
@@ -43,14 +42,17 @@ class NginxProxyZero < Sinatra::Base
 
   post '/top' do
     @payload = params
-    @payload = JSON.parse(request.body.read).symbolize_keys unless @payload[:container_name]
-    HealthCheck.new(@payload[:container_name]).top.to_json.to_s
+    @payload = JSON.parse(request.body.read).symbolize_keys unless @payload[:name]
+    HealthCheck.new(@payload[:name]).top.to_json.to_s
   end
 
   post '/health_check' do
     @payload = params
-    @payload = JSON.parse(request.body.read).symbolize_keys unless @payload[:container_name]
-    HealthCheck.new(@payload[:container_name], @payload[:healthy_process]).healthy?.to_s
+    @payload = JSON.parse(request.body.read).symbolize_keys unless @payload[:name]
+    container = Docker::Container.get(@payload[:name])
+    puts container.info
+    health_check = HealthCheck.new(container)
+    health_check.healthy?.to_s
   end
 
   get '/' do

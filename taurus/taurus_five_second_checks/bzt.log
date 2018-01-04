@@ -1,0 +1,174 @@
+[2018-01-04 18:48:27,688 INFO root] Taurus CLI Tool v1.10.3
+[2018-01-04 18:48:27,689 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': '/var/folders/b2/kgfkl30s5vj8jbr6h_yr_6880000gn/T/bzt_L_GVqk.log', 'option': None, 'aliases': []}
+[2018-01-04 18:48:27,689 DEBUG root] Python: CPython 2.7.10
+[2018-01-04 18:48:27,689 DEBUG root] OS: ('Darwin', 'KennyBeuistsMBP.fios-router.home', '17.3.0', 'Darwin Kernel Version 17.3.0: Thu Nov  9 18:09:22 PST 2017; root:xnu-4570.31.3~1/RELEASE_X86_64', 'x86_64', 'i386')
+[2018-01-04 18:48:27,689 INFO root] Starting with configs: ['taurus_test.yml']
+[2018-01-04 18:48:27,689 DEBUG root] Using personal config: /Users/kennybergquist/.bzt-rc
+[2018-01-04 18:48:27,689 INFO Engine] Configuring...
+[2018-01-04 18:48:27,689 DEBUG Engine] No machine configs dir: /usr/local/Cellar/bzt/1.10.3/libexec/etc/bzt.d
+[2018-01-04 18:48:27,689 DEBUG Engine.Configuration] Configs: ['/usr/local/Cellar/bzt/1.10.3/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml']
+[2018-01-04 18:48:27,690 DEBUG Engine.Configuration] Reading /usr/local/Cellar/bzt/1.10.3/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml as YAML
+[2018-01-04 18:48:27,729 DEBUG Engine.Configuration] Configs: ['/Users/kennybergquist/.bzt-rc', 'taurus_test.yml']
+[2018-01-04 18:48:27,731 DEBUG Engine.Configuration] Reading /Users/kennybergquist/.bzt-rc as YAML
+[2018-01-04 18:48:27,737 DEBUG Engine.Configuration] Reading taurus_test.yml as YAML
+[2018-01-04 18:48:27,739 DEBUG Engine.Configuration] Configs: ['/Users/kennybergquist/.bzt-rc', 'taurus_test.yml']
+[2018-01-04 18:48:27,739 DEBUG Engine.Configuration] Reading /Users/kennybergquist/.bzt-rc as YAML
+[2018-01-04 18:48:27,744 DEBUG Engine.Configuration] Reading taurus_test.yml as YAML
+[2018-01-04 18:48:27,756 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.10.3&installID=macos-3200118277c0
+[2018-01-04 18:48:27,756 INFO Engine] Artifacts dir: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651
+[2018-01-04 18:48:27,762 DEBUG Engine] New artifact filename: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/effective
+[2018-01-04 18:48:27,764 DEBUG Engine.Configuration] Dumping YAML config into /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/effective.yml
+[2018-01-04 18:48:27,799 DEBUG Engine.Configuration] Dumping JSON config into /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/effective.json
+[2018-01-04 18:48:27,801 DEBUG Engine] New artifact filename: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/merged.yml
+[2018-01-04 18:48:27,801 DEBUG Engine.Configuration] Dumping YAML config into /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/merged.yml
+[2018-01-04 18:48:27,803 DEBUG Engine] New artifact filename: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/merged.json
+[2018-01-04 18:48:27,803 DEBUG Engine.Configuration] Dumping JSON config into /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/merged.json
+[2018-01-04 18:48:27,803 DEBUG Engine] Add existing artifact (move=False): taurus_test.yml
+[2018-01-04 18:48:27,803 DEBUG Engine] Copying taurus_test.yml to /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/taurus_test.yml
+[2018-01-04 18:48:27,804 DEBUG root] Closing log handler: /var/folders/b2/kgfkl30s5vj8jbr6h_yr_6880000gn/T/bzt_L_GVqk.log
+[2018-01-04 18:48:27,804 DEBUG root] Switched writing logs to /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/bzt.log
+[2018-01-04 18:48:27,804 INFO Engine] Preparing...
+[2018-01-04 18:48:27,805 DEBUG Engine] Module config: consolidator defaultdict(None, {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'})
+[2018-01-04 18:48:27,805 DEBUG root] Importing module: bzt.modules.aggregator
+[2018-01-04 18:48:27,834 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/Cellar/bzt/1.10.3/libexec/lib/python2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2018-01-04 18:48:27,834 DEBUG Engine.consolidator] Exception in dehumanize_time(inf)
+[2018-01-04 18:48:27,834 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2018-01-04 18:48:27,834 DEBUG Engine] Module config: monitoring defaultdict(None, {'class': 'bzt.modules.monitoring.Monitoring'})
+[2018-01-04 18:48:27,834 DEBUG root] Importing module: bzt.modules.monitoring
+[2018-01-04 18:48:27,837 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/Cellar/bzt/1.10.3/libexec/lib/python2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2018-01-04 18:48:27,837 DEBUG Engine] Module config: local defaultdict(None, {'class': 'bzt.modules.provisioning.Local'})
+[2018-01-04 18:48:27,837 DEBUG root] Importing module: bzt.modules.provisioning
+[2018-01-04 18:48:27,837 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/Cellar/bzt/1.10.3/libexec/lib/python2.7/site-packages/bzt/modules/provisioning.pyc'>
+[2018-01-04 18:48:27,838 DEBUG Engine] Module config: jmeter defaultdict(None, {'properties': defaultdict(None, {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'summariser.name': '', 'jmeterengine.force.system.exit': 'true'}), 'class': 'bzt.modules.jmeter.JMeterExecutor', 'plugins': ['jpgc-casutg', 'jpgc-dummy', 'jpgc-ffw', 'jpgc-fifo', 'jpgc-functions', 'jpgc-json', 'jpgc-perfmon', 'jpgc-prmctl', 'jpgc-tst']})
+[2018-01-04 18:48:27,838 DEBUG root] Importing module: bzt.modules.jmeter
+[2018-01-04 18:48:27,851 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/Cellar/bzt/1.10.3/libexec/lib/python2.7/site-packages/bzt/modules/jmeter.pyc'>
+[2018-01-04 18:48:27,851 DEBUG Engine.local] Preparing executor: jmeter/4550469776
+[2018-01-04 18:48:27,851 DEBUG Engine] New artifact filename: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/jmeter.log
+[2018-01-04 18:48:27,851 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2018-01-04 18:48:27,852 DEBUG Engine.jmeter] Port 4445 is free
+[2018-01-04 18:48:27,852 DEBUG Engine.jmeter] Using port 4445 for management
+[2018-01-04 18:48:27,852 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2018-01-04 18:48:28,006 DEBUG Engine.jmeter.JavaVM] JavaVM output: java version "1.8.0_60"
+Java(TM) SE Runtime Environment (build 1.8.0_60-b27)
+Java HotSpot(TM) 64-Bit Server VM (build 25.60-b23, mixed mode)
+
+[2018-01-04 18:48:28,007 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2018-01-04 18:48:28,007 DEBUG Engine.jmeter.JMeter] Trying jmeter: /Users/kennybergquist/.bzt/jmeter-taurus/3.3/bin/jmeter.sh
+[2018-01-04 18:48:28,007 DEBUG bzt.utils] Executing shell: ['/Users/kennybergquist/.bzt/jmeter-taurus/3.3/bin/jmeter.sh', '-j', '/var/folders/b2/kgfkl30s5vj8jbr6h_yr_6880000gn/T/jmeterhEIaWZlog', '--version'] at .
+[2018-01-04 18:48:28,158 DEBUG Engine] Taurus updates info: {"latest":"1.10.3","needsUpgrade":false}
+[2018-01-04 18:48:28,159 DEBUG Engine] Installation is up-to-date
+[2018-01-04 18:48:29,100 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____     
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \   
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) | 
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <  
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 3.3 r1808647  
+
+Copyright (c) 1999-2017 The Apache Software Foundation
+
+ / None
+[2018-01-04 18:48:29,101 DEBUG Engine] New artifact filename: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/requests.jmx
+[2018-01-04 18:48:29,105 DEBUG JMeterScenarioBuilder] Saving JMX to: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/requests.jmx
+[2018-01-04 18:48:29,105 DEBUG bzt.utils] Executing shell: ['/Users/kennybergquist/.bzt/jmeter-taurus/3.3/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/requests.jmx'] at .
+[2018-01-04 18:48:31,536 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/requests.jmx
+18:48:30.638 [main] INFO  org.jmeterplugins.repository.PluginManager - Plugins Status: [jpgc-functions=2.0, jpgc-casutg=2.5, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.6, jpgc-prmctl=0.3, jpgc-perfmon=2.1, jpgc-plugins-manager=0.16, jpgc-tst=2.1, jmeter-core=3.3, jmeter-ftp=3.3, jmeter-http=3.3, jmeter-jdbc=3.3, jmeter-jms=3.3, jmeter-junit=3.3, jmeter-java=3.3, jmeter-ldap=3.3, jmeter-mail=3.3, jmeter-mongodb=3.3, jmeter-native=3.3, jmeter-tcp=3.3, jmeter-components=3.3]
+2018-01-04 18:48:30,638 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.0, jpgc-casutg=2.5, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.6, jpgc-prmctl=0.3, jpgc-perfmon=2.1, jpgc-plugins-manager=0.16, jpgc-tst=2.1, jmeter-core=3.3, jmeter-ftp=3.3, jmeter-http=3.3, jmeter-jdbc=3.3, jmeter-jms=3.3, jmeter-junit=3.3, jmeter-java=3.3, jmeter-ldap=3.3, jmeter-mail=3.3, jmeter-mongodb=3.3, jmeter-native=3.3, jmeter-tcp=3.3, jmeter-components=3.3]
+18:48:30.990 [main] INFO  org.apache.jmeter.save.SaveService - Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2018-01-04 18:48:30,990 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+18:48:31.005 [main] INFO  org.apache.jmeter.save.SaveService - Using SaveService properties file encoding UTF-8
+2018-01-04 18:48:31,005 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+18:48:31.009 [main] INFO  org.apache.jmeter.save.SaveService - Using SaveService properties version 3.2
+2018-01-04 18:48:31,009 INFO o.a.j.s.SaveService: Using SaveService properties version 3.2
+18:48:31.057 [main] INFO  org.apache.jmeter.protocol.http.control.CacheManager - Will only cache the following methods: [GET]
+2018-01-04 18:48:31,057 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+18:48:31.060 [main] INFO  org.apache.jmeter.protocol.http.control.CookieManager - Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2018-01-04 18:48:31,060 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+18:48:31.142 [main] INFO  org.jmeterplugins.repository.PluginManager - Restarting JMeter...
+2018-01-04 18:48:31,142 INFO o.j.r.PluginManager: Restarting JMeter...
+18:48:31.143 [Thread-1] INFO  org.jmeterplugins.repository.PluginManager - Starting JMeter Plugins modifications
+2018-01-04 18:48:31,143 INFO o.j.r.PluginManager: Starting JMeter Plugins modifications
+
+ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console. Set system property 'org.apache.logging.log4j.simplelog.StatusLogger.level' to TRACE to show Log4j2 internal initialization logging.
+
+[2018-01-04 18:48:31,537 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=100, throughput=None, ramp_up=60.0, hold=60.0, iterations=0, duration=120.0, steps=None)
+[2018-01-04 18:48:31,540 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (quick-test) to ConcurrencyThreadGroup and apply load parameters
+[2018-01-04 18:48:31,540 DEBUG Engine] New artifact filename: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/kpi.jtl
+[2018-01-04 18:48:31,541 DEBUG Engine] New artifact filename: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/error.jtl
+[2018-01-04 18:48:31,542 DEBUG Engine] New artifact filename: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/modified_requests.jmx
+[2018-01-04 18:48:31,542 DEBUG JMX] Saving JMX to: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/modified_requests.jmx
+[2018-01-04 18:48:31,542 DEBUG Engine.jmeter] Additional properties: defaultdict(None, {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'user.classpath': '/Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651:/Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651', 'sampleresult.default.encoding': 'UTF-8', 'summariser.name': '', 'jmeterengine.force.system.exit': 'true', 'jmeter.save.saveservice.timestamp_format': 'ms', 'jmeterengine.nongui.maxport': 4445, 'jmeterengine.nongui.port': 4445})
+[2018-01-04 18:48:31,543 DEBUG Engine] New artifact filename: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/jmeter-bzt.properties
+[2018-01-04 18:48:31,543 DEBUG Engine.jmeter] Additional system properties defaultdict(None, {'sun.net.inetaddr.ttl': 0})
+[2018-01-04 18:48:31,543 DEBUG Engine] New artifact filename: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/system.properties
+[2018-01-04 18:48:31,543 DEBUG Engine] New artifact filename: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/jmeter.out
+[2018-01-04 18:48:31,543 DEBUG Engine] New artifact filename: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/jmeter.err
+[2018-01-04 18:48:31,544 DEBUG Engine] Module config: final-stats defaultdict(None, {'class': 'bzt.modules.reporting.FinalStatus'})
+[2018-01-04 18:48:31,544 DEBUG root] Importing module: bzt.modules.reporting
+[2018-01-04 18:48:31,630 DEBUG easyprocess] version=0.2.3
+[2018-01-04 18:48:31,632 DEBUG pyvirtualdisplay] version=0.2.1
+[2018-01-04 18:48:31,634 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/Cellar/bzt/1.10.3/libexec/lib/python2.7/site-packages/bzt/modules/reporting.pyc'>
+[2018-01-04 18:48:31,634 DEBUG Engine] Module config: console defaultdict(None, {'class': 'bzt.modules.console.ConsoleStatusReporter'})
+[2018-01-04 18:48:31,634 DEBUG root] Importing module: bzt.modules.console
+[2018-01-04 18:48:31,634 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/Cellar/bzt/1.10.3/libexec/lib/python2.7/site-packages/bzt/modules/console.pyc'>
+[2018-01-04 18:48:31,644 DEBUG Engine.Configuration] Dumping YAML config into /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/effective.yml
+[2018-01-04 18:48:31,686 DEBUG Engine.Configuration] Dumping JSON config into /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/effective.json
+[2018-01-04 18:48:31,687 INFO Engine] Starting...
+[2018-01-04 18:48:31,688 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x10f357b90>
+[2018-01-04 18:48:31,688 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f26a0d0>
+[2018-01-04 18:48:31,688 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x10f256890>
+[2018-01-04 18:48:31,688 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x1107c3790>
+[2018-01-04 18:48:31,688 INFO Engine.console] Waiting for results...
+[2018-01-04 18:48:31,688 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x10f256550>
+[2018-01-04 18:48:31,689 DEBUG Engine.local] Delay setup for jmeter/quick-test: 0(start-at) + 0(delay) = 0
+[2018-01-04 18:48:31,691 DEBUG Engine.Configuration] Dumping YAML config into /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/effective.yml
+[2018-01-04 18:48:31,732 DEBUG Engine.Configuration] Dumping JSON config into /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/effective.json
+[2018-01-04 18:48:31,734 DEBUG root] Leveling down log file verbosity, use -v option to have DEBUG messages enabled
+[2018-01-04 18:48:31,734 DEBUG root] Leveled up log file verbosity
+[2018-01-04 18:48:31,734 DEBUG Engine.jmeter] Executing shell from /Users/kennybergquist/Git/nginx_proxy_zero: ['/Users/kennybergquist/.bzt/jmeter-taurus/3.3/bin/jmeter.sh', '-n', '-t', '/Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/modified_requests.jmx', '-j', '/Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/jmeter.log', '-q', '/Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/jmeter-bzt.properties', '-S', '/Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/system.properties']
+[2018-01-04 18:48:31,734 DEBUG bzt.utils] Executing shell: ['/Users/kennybergquist/.bzt/jmeter-taurus/3.3/bin/jmeter.sh', '-n', '-t', '/Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/modified_requests.jmx', '-j', '/Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/jmeter.log', '-q', '/Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/jmeter-bzt.properties', '-S', '/Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/system.properties'] at /Users/kennybergquist/Git/nginx_proxy_zero
+[2018-01-04 18:48:31,743 DEBUG root] Leveling down log file verbosity, use -v option to have DEBUG messages enabled
+[2018-01-04 18:48:31,954 INFO Engine.console] Waiting for finish...
+[2018-01-04 18:50:34,975 WARNING Engine] Please wait for graceful shutdown...
+[2018-01-04 18:50:34,982 DEBUG root] Leveled up log file verbosity
+[2018-01-04 18:50:34,982 INFO Engine] Shutting down...
+[2018-01-04 18:50:34,990 DEBUG Engine.local] Shutdown jmeter/quick-test
+[2018-01-04 18:50:34,991 DEBUG Engine.console] Restoring logging streams, [<logging.StreamHandler object at 0x10eb76310>]/{<logging.StreamHandler object at 0x10eb76310>: <open file '<stdout>', mode 'w' at 0x10de20150>}
+[2018-01-04 18:50:34,993 DEBUG Engine.Configuration] Dumping YAML config into /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/effective.yml
+[2018-01-04 18:50:35,035 DEBUG Engine.Configuration] Dumping JSON config into /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/effective.json
+[2018-01-04 18:50:35,036 INFO Engine] Post-processing...
+[2018-01-04 18:50:35,036 DEBUG Engine.local] Post-process jmeter/quick-test
+[2018-01-04 18:50:35,037 DEBUG Engine] Add existing artifact (move=True): /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/modified_requests.jmx
+[2018-01-04 18:50:35,037 DEBUG Engine] No need to copy /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/modified_requests.jmx
+[2018-01-04 18:50:35,037 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/kpi.jtl
+[2018-01-04 18:50:35,037 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2018-01-04 18:50:35,037 DEBUG Engine.jmeter.JTLReader] Buffer len: 2
+[2018-01-04 18:50:35,037 DEBUG Engine.jmeter.JTLReader] Aggregating: 1515109833
+[2018-01-04 18:50:35,053 DEBUG Engine.jmeter.JTLReader] Aggregating: 1515109834
+[2018-01-04 18:50:35,062 DEBUG Engine.consolidator] Consolidator buffer[4]: [1515109831, 1515109832, 1515109833, 1515109834]
+[2018-01-04 18:50:35,063 DEBUG Engine.consolidator] Merging into 1515109831
+[2018-01-04 18:50:35,063 DEBUG Engine.consolidator] Merging 1515109831
+[2018-01-04 18:50:35,077 DEBUG Engine.consolidator] Processed datapoint: 1515109831/None
+[2018-01-04 18:50:35,077 DEBUG Engine.consolidator] Merging into 1515109832
+[2018-01-04 18:50:35,077 DEBUG Engine.consolidator] Merging 1515109832
+[2018-01-04 18:50:35,089 DEBUG Engine.consolidator] Processed datapoint: 1515109832/None
+[2018-01-04 18:50:35,089 DEBUG Engine.consolidator] Merging into 1515109833
+[2018-01-04 18:50:35,089 DEBUG Engine.consolidator] Merging 1515109833
+[2018-01-04 18:50:35,102 DEBUG Engine.consolidator] Processed datapoint: 1515109833/None
+[2018-01-04 18:50:35,103 DEBUG Engine.consolidator] Merging into 1515109834
+[2018-01-04 18:50:35,103 DEBUG Engine.consolidator] Merging 1515109834
+[2018-01-04 18:50:35,115 DEBUG Engine.consolidator] Processed datapoint: 1515109834/None
+[2018-01-04 18:50:35,115 INFO Engine.final-stats] Test duration: 0:02:03
+[2018-01-04 18:50:35,115 INFO Engine.final-stats] Samples count: 170038, 0.30% failures
+[2018-01-04 18:50:35,115 INFO Engine.final-stats] Average times: total 0.052, latency 0.052, connect 0.000
+[2018-01-04 18:50:35,116 INFO Engine.final-stats] Percentile 0.0%: 0.000
+[2018-01-04 18:50:35,116 INFO Engine.final-stats] Percentile 50.0%: 0.043
+[2018-01-04 18:50:35,116 INFO Engine.final-stats] Percentile 90.0%: 0.102
+[2018-01-04 18:50:35,116 INFO Engine.final-stats] Percentile 95.0%: 0.127
+[2018-01-04 18:50:35,116 INFO Engine.final-stats] Percentile 99.0%: 0.192
+[2018-01-04 18:50:35,116 INFO Engine.final-stats] Percentile 99.9%: 0.321
+[2018-01-04 18:50:35,116 INFO Engine.final-stats] Percentile 100.0%: 1.152
+[2018-01-04 18:50:35,116 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2018-01-04 18:50:35,119 DEBUG Engine.Configuration] Dumping YAML config into /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/effective.yml
+[2018-01-04 18:50:35,162 DEBUG Engine.Configuration] Dumping JSON config into /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/effective.json
+[2018-01-04 18:50:35,163 INFO root] Artifacts dir: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651
+[2018-01-04 18:50:35,163 INFO root] Done performing with code: 0
+[2018-01-04 18:50:35,163 DEBUG root] Closing log handler: /Users/kennybergquist/Git/nginx_proxy_zero/2018-01-04_18-48-27.756651/bzt.log

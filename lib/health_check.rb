@@ -1,21 +1,29 @@
+require 'net/http'
+
 class HealthCheck
-  attr_reader :container_name, :health_check
-  def initialize(container_name, health_check = nil)
-    raise ArgumentError unless container_name
-    @container = Docker::Container.get(container_name)
-    @health_check = health_check
+  attr_reader :container, :container_name, :network_name
+  def initialize(container)
+    raise ArgumentError unless container
+    @container = container.refresh!
   end
 
-  def top; @container.top end
+  def top; container.top end
 
   def healthy?
-    @container.top.any? do |process| 
-      process['COMMAND'] == @health_check
-    end
+    return false unless container.info['NetworkSettings']
+    port = container.info['NetworkSettings']['Ports'].first.first.split('/').first
+    ip_address = @container.info['NetworkSettings']['Networks']['bridge']['IPAddress']
+    uri = URI.parse("http://#{ip_address}:#{port}")
+    response = Net::HTTP.get_response(uri)
+    response.is_a? Net::HTTPSuccess
   end
 
   def wait_until_healthy
-    while !healthy? do sleep(1) end
+    while !healthy? do 
+      puts "#{container.id} failed, sleeping..."
+      sleep(5)
+      container = container.refresh!
+    end
     yield
   end
 end
