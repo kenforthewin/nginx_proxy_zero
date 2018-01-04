@@ -1,0 +1,22 @@
+version: '3'
+services:
+  redis:
+    image: 'redis'
+  zero:
+    build:
+      context: .
+    environment:
+      - VIRTUAL_HOST=zero.deve
+    volumes:
+      - .:/app
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+  nginx-proxy:
+    image: 'jwilder/nginx-proxy'
+    ports:
+      - "80:80"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+  some-zerodowntime-service:
+    image: 'jwilder/whoami'
+    environment:
+      - VIRTUAL_HOST=whoami.deve

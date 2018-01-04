@@ -1,0 +1,11 @@
+.project
+tmp
+/nbproject/*
+*.swp
+
+### Vagrant ###
+.vagrant/
+Vagrantfile
+
+# Contains honeybadger api key
+honeybadger.yml
