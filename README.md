@@ -1,5 +1,5 @@
 # nginx_proxy_zero
-Idiomatic API for zero-downtime docker deploys. wip, unsafe, don't use in production.
+Idiomatic API for zero-downtime docker deploys. Not secure - don't give public access.
 
 
 ## dev setup
