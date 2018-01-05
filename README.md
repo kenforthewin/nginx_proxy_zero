@@ -14,7 +14,6 @@ Make a POST request to `http://zero.deve/update_deployment`. The body of your re
       "name": "nginxproxyzero_some-zerodowntime-service_1",
       "network": "nginxproxyzero_default",
       "image": "jwilder/whoami",
-      "virtual_host": "whoami.deve",
-      "healthy_process": "/app/http"
+      "virtual_host": "whoami.deve"
     }
 ```
