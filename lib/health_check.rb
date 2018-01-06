@@ -13,16 +13,24 @@ class HealthCheck
     return false unless container.info['NetworkSettings']
     port = container.info['NetworkSettings']['Ports'].first.first.split('/').first
     ip_address = @container.info['NetworkSettings']['Networks']['bridge']['IPAddress']
-    uri = URI.parse("http://#{ip_address}:#{port}")
-    response = Net::HTTP.get_response(uri)
-    response.is_a? Net::HTTPSuccess
+    url = "http://#{ip_address}:#{port}"
+    puts "pinging #{url}..."
+    uri = URI.parse(url)
+
+    begin
+      response = Net::HTTP.get_response(uri)
+    rescue Errno::ECONNREFUSED
+      return false
+    end
+
+    response.is_a?(Net::HTTPSuccess) || response.is_a?(Net::HTTPFound)
   end
 
   def wait_until_healthy
     while !healthy? do 
       puts "#{container.id} failed, sleeping..."
       sleep(5)
-      container = container.refresh!
+      @container = container.refresh!
     end
     yield
   end

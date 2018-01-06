@@ -22,9 +22,20 @@ class NginxProxyZero < Sinatra::Base
     @payload = JSON.parse(request.body.read).symbolize_keys unless @payload[:network]
 
     docker_network = Docker::Network.get(@payload[:network])
-    old_container = Docker::Container.get(@payload[:name])
+    bridge_network = Docker::Network.get('bridge')
+    begin
+      old_container = Docker::Container.get(@payload[:name])
+    rescue Docker::Error::NotFoundError
+      old_container = false
+    end
+
+    begin
+      bridge_network.connect(ENV['HOSTNAME'])
+    rescue Excon::Error::Forbidden
+    end
+    image = Docker::Image.create('fromImage' => @payload[:image], 'tag' => @payload[:tag] || 'latest')
     new_container = Docker::Container.create(
-      'Image' => @payload[:image],
+      'Image' => image.id,
       'Env' => ["VIRTUAL_HOST=#{@payload[:virtual_host]}"]
     )
     new_container.start
@@ -32,8 +43,12 @@ class NginxProxyZero < Sinatra::Base
     Thread.new do
       health_check.wait_until_healthy do
         docker_network.connect(new_container.id)
-        old_container.stop
-        old_container.remove
+
+        if old_container
+          old_container.stop
+          old_container.remove
+        end
+        
         new_container.rename(@payload[:name])
       end
     end

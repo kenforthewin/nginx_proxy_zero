@@ -6,7 +6,7 @@ services:
     environment:
       - VIRTUAL_HOST=zero.deve
     volumes:
-      - .:/app
+      - .:/app # remove if you're not developing 
       - /var/run/docker.sock:/var/run/docker.sock:ro
   nginx-proxy:
     image: 'jwilder/nginx-proxy'
