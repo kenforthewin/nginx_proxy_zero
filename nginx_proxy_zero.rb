@@ -33,10 +33,25 @@ class NginxProxyZero < Sinatra::Base
       bridge_network.connect(ENV['HOSTNAME'])
     rescue Excon::Error::Forbidden
     end
+    environment_variables = old_container ? old_container.info['Config']['Env'] : []
+    new_env = environment_variables + ["VIRTUAL_HOST=#{@payload[:virtual_host]}"]
+    volumes = old_container.info['Config']['Volumes']
+    # mounts = old_container.info['Mounts']
+    cmd = old_container.info['Config']['Cmd']
+    entrypoint = old_container.info['Config']['Entrypoint']
+    labels = old_container.info['Config']['Labels']
+    links = old_container.info['HostConfig']['Links']
     image = Docker::Image.create('fromImage' => @payload[:image], 'tag' => @payload[:tag] || 'latest')
     new_container = Docker::Container.create(
-      'Image' => image.id,
-      'Env' => ["VIRTUAL_HOST=#{@payload[:virtual_host]}"]
+      'Image' =>      image.id,
+      'Env' =>        new_env,
+      'Labels' =>     labels,
+      'Cmd' =>        cmd,
+      'Entrypoint' => entrypoint,
+      'Volumes' =>    volumes,
+      'HostConfig' => {
+        'Links' => links
+      }
     )
     new_container.start
     health_check = HealthCheck.new(new_container)
@@ -58,7 +73,7 @@ class NginxProxyZero < Sinatra::Base
   post '/top' do
     @payload = params
     @payload = JSON.parse(request.body.read).symbolize_keys unless @payload[:name]
-    HealthCheck.new(@payload[:name]).top.to_json.to_s
+    HealthCheck.new(@payload[:name]).top.to_json
   end
 
   post '/health_check' do
